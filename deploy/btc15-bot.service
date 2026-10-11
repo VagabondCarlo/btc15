@@ -1,0 +1,18 @@
+[Unit]
+Description=btc15 trading bot (paper unless LIVE=1 in keys.env)
+After=network-online.target time-sync.target
+Wants=network-online.target time-sync.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/btc15
+EnvironmentFile=-/home/pi/btc15/keys.env
+Environment=PYTHONPATH=/home/pi/btc15
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/btc15/.venv/bin/python btc15_bot.py --db data/bot.db
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

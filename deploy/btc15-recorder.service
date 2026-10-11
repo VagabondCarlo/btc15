@@ -1,0 +1,19 @@
+[Unit]
+Description=btc15 order book recorder
+After=network-online.target time-sync.target
+Wants=network-online.target time-sync.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/btc15
+Environment=PYTHONPATH=/home/pi/btc15
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/btc15/.venv/bin/python live_record.py --db data/live.db
+Restart=always
+RestartSec=10
+# Writes go to an SD card. Keep them modest or move data/ to a USB SSD.
+Nice=5
+
+[Install]
+WantedBy=multi-user.target
