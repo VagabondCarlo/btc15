@@ -58,7 +58,7 @@ zero. At 99 cents the win rate has to be known to a tenth of a point.
 
 ## 2026-10-02 — real trade data and the corrected rule
 
-The owner clarified the rule: the $40 figure was a guess. The real entry is
+The rule was then clarified: the $40 figure was a guess. The real entry is
 2 to 4 minutes left, betting the side when the move looks decisive. A screen
 recording of the app supplied 38 trade detail screens, 12 of them settled.
 
