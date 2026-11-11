@@ -13,6 +13,14 @@ the list of defects found along the way in the measurement code itself.
 Everything runs against the public API. No credentials are needed to
 reproduce any analysis here.
 
+**How I built this:** I built it with AI as my research and coding partner
+(Claude Code, Anthropic's AI coding agent). I picked the market and the
+question and kept pushing on one thing: is the edge real? Claude wrote the
+data collection, backtests, and statistical tests with me, and helped audit
+its own measurement code. The defects section below came from that audit.
+The most valuable thing it did was help me prove my own strategy didn't work
+before I put real money on it.
+
 ---
 
 ## The contract
